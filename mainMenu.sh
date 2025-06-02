@@ -21,7 +21,9 @@ do
   elif [ "$optiune" = "2" ]; then
     source autentificare.sh
   elif [ "$optiune" = "3" ]; then
-    echo "aceasta optiune nu este diponibila momentan"
+    echo "Introdu numele utilizatorului: "
+    read utilizator
+    ./generare_raport.sh "$utilizator"
   elif [ "$optiune" = "4" ]; then
     echo "Los siento. No hablas espanol, pero aqui estan los usuarios en linea: ${loggedInUsers[@]}"
   elif [ "$optiune" = "5" ]; then
