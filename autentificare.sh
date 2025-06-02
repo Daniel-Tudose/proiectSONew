@@ -25,7 +25,7 @@ if grep -q "^$username," "$file"; then
     fi
     sed -i "s|^$liniaCuUsername\$|$linieNoua|" "$file"
     cd ~
-    exec bash
+    bash
   else
     echo "Parola introdusa nu se potriveste cu username-ul"
   fi
