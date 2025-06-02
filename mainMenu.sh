@@ -27,7 +27,8 @@ do
   elif [ "$optiune" = "4" ]; then
     echo "Los siento. No hablas espanol, pero aqui estan los usuarios en linea: ${loggedInUsers[@]}"
   elif [ "$optiune" = "5" ]; then
-    echo "Logging out ======== UNDER CONSTRUCTION!"
+    # echo "Logging out ======== UNDER CONSTRUCTION!"
+    source logout.sh
   elif [ "$optiune" = "Q" ] || [ "$optiune" = "q" ]; then
     echo "La revedere!"
     exit 0
