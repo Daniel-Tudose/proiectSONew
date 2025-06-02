@@ -14,6 +14,11 @@ fi
   echo "Generat la: $(date)" >> "$raport_fisier"
   echo "Dimensiunea totala pe disc: $SIZE" >> "$raport_fisier"
   echo "------------------------------------" >> "$raport_fisier"
+
+  fisiere=$(find "$user_home" -type f | wc -1)
+  dirs=$(find "$user_home" -type d | wc -1)
+  size=$(du -sh "$user_home" | cut -f1)
+  
   echo "Raport generat cu succes." >> "$raport_fisier"
   
 ) &
