@@ -5,7 +5,7 @@ user_home="home/$username"
 report_file="$user_home/raport.txt"
 
 if [ ! -d "$user_home" ]; then
-    echo "Eroare: Directorul utilizatorului '$username' nu există."
+    echo "Eroare: Directorul utilizatorului '$username' nu exista."
     exit 1
 fi
 
@@ -16,10 +16,10 @@ fi
 
     echo "Raport pentru utilizatorul: $username" > "$report_file"
     echo "-------------------------------" >> "$report_file"
-    echo "Număr de fișiere: $num_files" >> "$report_file"
-    echo "Număr de directoare: $num_dirs" >> "$report_file"
-    echo "Dimensiune totală pe disc: $total_size" >> "$report_file"
+    echo "Numar de fisiere: $num_files" >> "$report_file"
+    echo "Numar de directoare: $num_dirs" >> "$report_file"
+    echo "Dimensiune totala pe disc: $total_size" >> "$report_file"
     echo "Generat la: $(date)" >> "$report_file"
 } &
 
-echo "Raportul pentru '$username' este generat în fundal."
+echo "Raportul pentru '$username' este generat in fundal."
