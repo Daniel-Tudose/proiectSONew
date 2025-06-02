@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ ! ${#1} -ge 12 ]; then
-  echo "Parola are mai PUTIN de 12 caractere!"
+if [ ! ${#1} -ge 8 ]; then
+  echo "Parola are mai PUTIN de 8 caractere!"
   exit 1
 fi
 
