@@ -49,7 +49,7 @@ file="registruUtilizatori.csv"
 echo "$utilizator,$mail,$user_id,$hashedPassword" >> "$file"
 
 if hostname | grep -q "DESKTOP-8JBOPMU"; then
-  mkdir -p "/home/max/danielTudose/proiectSO/$utilizator/home"
+  mkdir -p "/home/$utilizator"
   # adaugam & pentru a trimite in background procesul de trimitere a mailului pentru ca dureaza prea mult
   echo -e "Subject: Înregistrare completă\n\nSalut, $utilizator!\nContul tău a fost înregistrat cu succes pe platforma noastră." | msmtp "$mail" &
 else
