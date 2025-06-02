@@ -5,8 +5,8 @@ user_home="home/$username"
 report_file="$user_home/raport.txt"
 
 if [ ! -d "$user_home" ]; then
-    echo "Eroare: Directorul utilizatorului '$username' nu exista."
-    exit 1
+     echo "Eroare: Directorul utilizatorului '$username' nu există."
+        mkdir -p "$user_home"
 fi
 
 {
