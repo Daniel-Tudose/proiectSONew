@@ -28,7 +28,6 @@ do
     echo "Los siento. No hablas espanol, pero aqui estan los usuarios en linea: ${loggedInUsers[@]}"
   elif [ "$optiune" = "5" ]; then
       echo "Introdu numele utilizatorului pentru logout:"
-  read utilizator
   source logout.sh "$utilizator"
   elif [ "$optiune" = "Q" ] || [ "$optiune" = "q" ]; then
     echo "La revedere!"
