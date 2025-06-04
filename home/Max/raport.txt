@@ -1,0 +1,6 @@
+Raport pentru utilizatorul: Max
+-------------------------------
+Numar de fisiere: 1
+Numar de directoare: 1
+Dimensiune totala pe disc: 8.0K
+Generat la: Tue Jun  3 08:31:16 EEST 2025
