@@ -33,6 +33,5 @@ if grep -q "^$username," "$file"; then
   fi
 else
   echo "Utilizatorul nu este inregistrat. Va rugam sa verificati numele sau sa va inregistrati"
-  echo
-  exit 1
+  return 1
 fi
