@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ${#loggedInUsers[@]} -eq 0 ]; then
-  echo "Nu există utilizatori autentificați în acest moment."
+  echo "Nu exista utilizatori autentificati in acest moment."
   exit 1
 fi
 
