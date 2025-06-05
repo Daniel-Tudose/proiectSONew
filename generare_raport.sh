@@ -1,7 +1,7 @@
 #!/bin/bash
 
 username="$1"
-user_home="home/$username"
+user_home="/home/max/$username"
 report_file="$user_home/raport.txt"
 
 if [ ! -d "$user_home" ]; then
