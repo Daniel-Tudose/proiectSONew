@@ -14,6 +14,7 @@ if grep -q "^$username," "$file"; then
   parolaHashedDinRegistru=$(echo "$liniaCuUsername" | sed -E "s/^(([^,]*,){3})([^,]*).*/\3/")
   if [ "$parolaCurentaHashed" = "$parolaHashedDinRegistru" ]; then
     echo "Autentificare cu succes!"
+    echo "Pentru a parasi instanta aceasta de Bash tastati exit urmat de tasta Enter"
     loggedInUsers+=("$username")
     lastLoginTime=$(date +"%Y-%m-%d %H:%M:%S")
     if [[ "$liniaCuUsername" =~ ,lastLogin= ]]; then
