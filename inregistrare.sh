@@ -47,6 +47,7 @@ user_id="ID_$(date +%s%N)_$RANDOM"
 hashedPassword=$(echo -n "$parola" | sha256sum)
 file="registruUtilizatori.csv"
 echo "$utilizator,$mail,$user_id,$hashedPassword" >> "$file"
+echo "Utilizatorul $utilizator a fost inregistrat cu succes!"
 
 if hostname | grep -q "DESKTOP-8JBOPMU"; then
   mkdir -p "/home/max/$utilizator"

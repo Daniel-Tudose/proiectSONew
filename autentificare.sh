@@ -24,7 +24,7 @@ if grep -q "^$username," "$file"; then
       # echo "linia NU CONTINE lastLogin"
     fi
     sed -i "s|^$liniaCuUsername\$|$linieNoua|" "$file"
-    cd ~
+    cd ~/$username
     bash
     cd -
   else
