@@ -1,7 +1,7 @@
 #!/bin/bash
 
 file="registruUtilizatori.csv"
-#veficam daca exista fisierul registruUtilizatori.csv; daca nu exista afisam >
+
 if [ ! -e "$file" ]; then
   echo "Se initializeaza registrul utilizatorilor"
   touch "$file"
