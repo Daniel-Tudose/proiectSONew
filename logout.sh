@@ -2,7 +2,7 @@
 
 if [ ${#loggedInUsers[@]} -eq 0 ]; then
   echo "Nu exista utilizatori autentificati in acest moment."
-  exit 1
+  return 1
 fi
 
 username="${loggedInUsers[-1]}"
