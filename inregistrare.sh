@@ -1,7 +1,6 @@
 #!/bin/bash
 
-numeValid=1
-while [ "$numeValid" -eq 1 ]
+while true
 do
   read -p "Alegeti un nume de utilizator: " utilizator
   ./verificareUtilizator.sh "$utilizator"
@@ -10,8 +9,7 @@ do
   fi
 done
 
-mailValid=1
-while [ "$mailValid" -eq 1 ]
+while true
 do
   read -p "Introduceti adresa de email: " mail
   ./verificareMail.sh "$mail"
@@ -20,8 +18,7 @@ do
   fi
 done
 
-parolaValida=1
-while [ "$parolaValida" -eq 1 ]
+while true
 do
   read -s -p "Alegeti o parola: " parola
   echo
