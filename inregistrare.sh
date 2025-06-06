@@ -51,7 +51,7 @@ if hostname | grep -q "DESKTOP-8JBOPMU"; then
   # adaugam & pentru a trimite in background procesul de trimitere a mailului pentru ca dureaza prea mult
   echo -e "Subject: Înregistrare completă\n\nSalut, $utilizator!\nContul tău a fost înregistrat cu succes pe platforma noastră." | msmtp "$mail" &
 else
-  mkdir -p "home/stud1028/danielTudose/proiectSO/$utilizator/home"
+  mkdir -p "/home/stud1028/Manushii/home/$utilizator"
   echo "Utilizatorul $utilizator a fost inregistrat cu succes! Emailul de confirmare nu poate fi trimis momentan. Ne cerem scuze pentru inconvenient."
 fi
 
