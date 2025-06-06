@@ -3,7 +3,7 @@
 loggedInUsers=()
 
 echo "Salut! Bine ai venit!"
-while [ "1" = "1" ]
+while true
 do
   echo "Alege numarul corespunzator optiunii pe care doresti sa o accesezi:"
   echo "1 - Inregistrare utilizator nou"
